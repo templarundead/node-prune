@@ -23,6 +23,11 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -iname Makefile -or \
     -iname README -or \
     -iname README.md -or \
+    -iname README.js -or \
+    -iname .Readme.md.un~ -or \
+    -iname README.md.bak -or \
+    -iname README.mkd -or \
+    -iname README.markdown -or \
     -iname CHANGELOG -or \
     -iname CHANGELOG.md -or \
     -name .editorconfig -or \
@@ -48,16 +53,22 @@ find . -type d -name node_modules -prune -exec find {} -type f \( \
     -name desktop.ini -or \
     -name npm-debug.log -or \
     -name .npmrc -or \
-    -iname LICENSE.txt -or \
-    -iname LICENSE.md -or \
-    -iname LICENSE-MIT -or \
-    -iname LICENSE-MIT.txt -or \
-    -iname LICENSE.BSD -or \
-    -iname LICENSE-BSD -or \
-    -iname LICENSE-jsbn -or \
-    -iname LICENSE -or \
     -iname AUTHORS -or \
     -iname CONTRIBUTORS -or \
+    -iname LICENCE -or \
+    -iname LICENSE -or \
+    -iname LICENSE-BSD -or \
+    -iname LICENSE-MIT -or \
+    -iname LICENSE-MIT.txt -or \
+    -iname LICENSE-jsbn -or \
+    -iname LICENSE.APACHE2 -or \
+    -iname LICENSE.BSD -or \
+    -iname LICENSE.MIT -or \
+    -iname LICENSE.mkd -or \
+    -iname LICENSE.closure-compiler -or \
+    -iname LICENSE.esprima -or \
+    -iname LICENSE.md -or \
+    -iname LICENSE.txt -or \
     -name .yarn-integrity -or \
     -name builderror.log -or \
     -name "*.md" -or \
